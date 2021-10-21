@@ -10,9 +10,40 @@
 		A0D53C042721A5C300D68351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C032721A5C300D68351 /* AppDelegate.swift */; };
 		A0D53C062721A5C300D68351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C052721A5C300D68351 /* SceneDelegate.swift */; };
 		A0D53C082721A5C300D68351 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C072721A5C300D68351 /* ViewController.swift */; };
-		A0D53C0B2721A5C300D68351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C092721A5C300D68351 /* Main.storyboard */; };
 		A0D53C0D2721A5C800D68351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C0C2721A5C800D68351 /* Assets.xcassets */; };
 		A0D53C102721A5C800D68351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C0E2721A5C800D68351 /* LaunchScreen.storyboard */; };
+		A0D53C192721A8F400D68351 /* BaseComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A0D53C182721A8F400D68351 /* BaseComponents */; };
+		A0D53C1C2721A90200D68351 /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = A0D53C1B2721A90200D68351 /* DefaultNetworkOperationPackage */; };
+		A0D53C1F2721AD5200D68351 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C1E2721AD5200D68351 /* GoogleService-Info.plist */; };
+		A0D53C242721AEBC00D68351 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A0D53C232721AEBC00D68351 /* FirebaseAuth */; };
+		A0D53C262721AEBC00D68351 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A0D53C252721AEBC00D68351 /* FirebaseDatabase */; };
+		A0D53C282721AEBC00D68351 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A0D53C272721AEBC00D68351 /* FirebaseFirestoreSwift-Beta */; };
+		A0D53C2C2721AF8E00D68351 /* AuthManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C2B2721AF8E00D68351 /* AuthManagerProtocol.swift */; };
+		A0D53C2E2721AFAF00D68351 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C2D2721AFAF00D68351 /* AuthManager.swift */; };
+		A0D53C302721AFE300D68351 /* SimpleAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C2F2721AFE300D68351 /* SimpleAuthRequest.swift */; };
+		A0D53C342721B16300D68351 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C332721B16300D68351 /* SplashViewController.swift */; };
+		A0D53C362721B17D00D68351 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C352721B17D00D68351 /* SplashViewModel.swift */; };
+		A0D53C382721B18400D68351 /* SplashViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C372721B18400D68351 /* SplashViewBuilder.swift */; };
+		A0D53C3C2721B1E700D68351 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C3B2721B1E700D68351 /* FontManager.swift */; };
+		A0D53C522721B26B00D68351 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C3F2721B26A00D68351 /* Montserrat-LightItalic.ttf */; };
+		A0D53C532721B26B00D68351 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C402721B26A00D68351 /* Montserrat-Medium.ttf */; };
+		A0D53C542721B26B00D68351 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C412721B26A00D68351 /* Montserrat-BoldItalic.ttf */; };
+		A0D53C552721B26B00D68351 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C422721B26B00D68351 /* Montserrat-Light.ttf */; };
+		A0D53C562721B26B00D68351 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C432721B26B00D68351 /* Montserrat-ThinItalic.ttf */; };
+		A0D53C572721B26B00D68351 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C442721B26B00D68351 /* Montserrat-ExtraLight.ttf */; };
+		A0D53C582721B26B00D68351 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C452721B26B00D68351 /* Montserrat-Thin.ttf */; };
+		A0D53C592721B26B00D68351 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C462721B26B00D68351 /* Montserrat-Bold.ttf */; };
+		A0D53C5A2721B26B00D68351 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C472721B26B00D68351 /* Montserrat-MediumItalic.ttf */; };
+		A0D53C5B2721B26B00D68351 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C482721B26B00D68351 /* Montserrat-BlackItalic.ttf */; };
+		A0D53C5C2721B26B00D68351 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C492721B26B00D68351 /* Montserrat-SemiBold.ttf */; };
+		A0D53C5D2721B26B00D68351 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C4A2721B26B00D68351 /* Montserrat-ExtraLightItalic.ttf */; };
+		A0D53C5E2721B26B00D68351 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C4B2721B26B00D68351 /* Montserrat-ExtraBold.ttf */; };
+		A0D53C5F2721B26B00D68351 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C4C2721B26B00D68351 /* OFL.txt */; };
+		A0D53C602721B26B00D68351 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C4D2721B26B00D68351 /* Montserrat-Black.ttf */; };
+		A0D53C612721B26B00D68351 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C4E2721B26B00D68351 /* Montserrat-Regular.ttf */; };
+		A0D53C622721B26B00D68351 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C4F2721B26B00D68351 /* Montserrat-Italic.ttf */; };
+		A0D53C632721B26B00D68351 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C502721B26B00D68351 /* Montserrat-SemiBoldItalic.ttf */; };
+		A0D53C642721B26B00D68351 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C512721B26B00D68351 /* Montserrat-ExtraBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +51,36 @@
 		A0D53C032721A5C300D68351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D53C052721A5C300D68351 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A0D53C072721A5C300D68351 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0D53C0A2721A5C300D68351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0D53C0C2721A5C800D68351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0D53C0F2721A5C800D68351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0D53C112721A5C800D68351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D53C1E2721AD5200D68351 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A0D53C2B2721AF8E00D68351 /* AuthManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManagerProtocol.swift; sourceTree = "<group>"; };
+		A0D53C2D2721AFAF00D68351 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		A0D53C2F2721AFE300D68351 /* SimpleAuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAuthRequest.swift; sourceTree = "<group>"; };
+		A0D53C332721B16300D68351 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A0D53C352721B17D00D68351 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		A0D53C372721B18400D68351 /* SplashViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewBuilder.swift; sourceTree = "<group>"; };
+		A0D53C3B2721B1E700D68351 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		A0D53C3F2721B26A00D68351 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		A0D53C402721B26A00D68351 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		A0D53C412721B26A00D68351 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D53C422721B26B00D68351 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		A0D53C432721B26B00D68351 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A0D53C442721B26B00D68351 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		A0D53C452721B26B00D68351 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		A0D53C462721B26B00D68351 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		A0D53C472721B26B00D68351 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A0D53C482721B26B00D68351 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A0D53C492721B26B00D68351 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		A0D53C4A2721B26B00D68351 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		A0D53C4B2721B26B00D68351 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A0D53C4C2721B26B00D68351 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		A0D53C4D2721B26B00D68351 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		A0D53C4E2721B26B00D68351 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		A0D53C4F2721B26B00D68351 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		A0D53C502721B26B00D68351 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D53C512721B26B00D68351 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +88,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D53C1C2721A90200D68351 /* DefaultNetworkOperationPackage in Frameworks */,
+				A0D53C242721AEBC00D68351 /* FirebaseAuth in Frameworks */,
+				A0D53C282721AEBC00D68351 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				A0D53C262721AEBC00D68351 /* FirebaseDatabase in Frameworks */,
+				A0D53C192721A8F400D68351 /* BaseComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +118,121 @@
 		A0D53C022721A5C300D68351 /* Investor */ = {
 			isa = PBXGroup;
 			children = (
-				A0D53C032721A5C300D68351 /* AppDelegate.swift */,
-				A0D53C052721A5C300D68351 /* SceneDelegate.swift */,
+				A0D53C392721B1D300D68351 /* Utilities */,
+				A0D53C312721B14100D68351 /* SceneModules */,
+				A0D53C292721AF5D00D68351 /* Managers */,
+				A0D53C212721AD6B00D68351 /* AppDelegate */,
+				A0D53C202721AD5400D68351 /* Resources */,
+				A0D53C1D2721A92400D68351 /* Models */,
 				A0D53C072721A5C300D68351 /* ViewController.swift */,
-				A0D53C092721A5C300D68351 /* Main.storyboard */,
-				A0D53C0C2721A5C800D68351 /* Assets.xcassets */,
 				A0D53C0E2721A5C800D68351 /* LaunchScreen.storyboard */,
-				A0D53C112721A5C800D68351 /* Info.plist */,
 			);
 			path = Investor;
+			sourceTree = "<group>";
+		};
+		A0D53C1D2721A92400D68351 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0D53C202721AD5400D68351 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C1E2721AD5200D68351 /* GoogleService-Info.plist */,
+				A0D53C112721A5C800D68351 /* Info.plist */,
+				A0D53C0C2721A5C800D68351 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A0D53C212721AD6B00D68351 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C052721A5C300D68351 /* SceneDelegate.swift */,
+				A0D53C032721A5C300D68351 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A0D53C292721AF5D00D68351 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C2A2721AF6600D68351 /* AuthManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A0D53C2A2721AF6600D68351 /* AuthManager */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C2B2721AF8E00D68351 /* AuthManagerProtocol.swift */,
+				A0D53C2D2721AFAF00D68351 /* AuthManager.swift */,
+				A0D53C2F2721AFE300D68351 /* SimpleAuthRequest.swift */,
+			);
+			path = AuthManager;
+			sourceTree = "<group>";
+		};
+		A0D53C312721B14100D68351 /* SceneModules */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C322721B14B00D68351 /* SplashScreen */,
+			);
+			path = SceneModules;
+			sourceTree = "<group>";
+		};
+		A0D53C322721B14B00D68351 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C332721B16300D68351 /* SplashViewController.swift */,
+				A0D53C352721B17D00D68351 /* SplashViewModel.swift */,
+				A0D53C372721B18400D68351 /* SplashViewBuilder.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		A0D53C392721B1D300D68351 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C3A2721B1DE00D68351 /* FontManager */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A0D53C3A2721B1DE00D68351 /* FontManager */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C3E2721B26A00D68351 /* Montserrat */,
+				A0D53C3B2721B1E700D68351 /* FontManager.swift */,
+			);
+			path = FontManager;
+			sourceTree = "<group>";
+		};
+		A0D53C3E2721B26A00D68351 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C3F2721B26A00D68351 /* Montserrat-LightItalic.ttf */,
+				A0D53C402721B26A00D68351 /* Montserrat-Medium.ttf */,
+				A0D53C412721B26A00D68351 /* Montserrat-BoldItalic.ttf */,
+				A0D53C422721B26B00D68351 /* Montserrat-Light.ttf */,
+				A0D53C432721B26B00D68351 /* Montserrat-ThinItalic.ttf */,
+				A0D53C442721B26B00D68351 /* Montserrat-ExtraLight.ttf */,
+				A0D53C452721B26B00D68351 /* Montserrat-Thin.ttf */,
+				A0D53C462721B26B00D68351 /* Montserrat-Bold.ttf */,
+				A0D53C472721B26B00D68351 /* Montserrat-MediumItalic.ttf */,
+				A0D53C482721B26B00D68351 /* Montserrat-BlackItalic.ttf */,
+				A0D53C492721B26B00D68351 /* Montserrat-SemiBold.ttf */,
+				A0D53C4A2721B26B00D68351 /* Montserrat-ExtraLightItalic.ttf */,
+				A0D53C4B2721B26B00D68351 /* Montserrat-ExtraBold.ttf */,
+				A0D53C4C2721B26B00D68351 /* OFL.txt */,
+				A0D53C4D2721B26B00D68351 /* Montserrat-Black.ttf */,
+				A0D53C4E2721B26B00D68351 /* Montserrat-Regular.ttf */,
+				A0D53C4F2721B26B00D68351 /* Montserrat-Italic.ttf */,
+				A0D53C502721B26B00D68351 /* Montserrat-SemiBoldItalic.ttf */,
+				A0D53C512721B26B00D68351 /* Montserrat-ExtraBoldItalic.ttf */,
+			);
+			path = Montserrat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +251,13 @@
 			dependencies = (
 			);
 			name = Investor;
+			packageProductDependencies = (
+				A0D53C182721A8F400D68351 /* BaseComponents */,
+				A0D53C1B2721A90200D68351 /* DefaultNetworkOperationPackage */,
+				A0D53C232721AEBC00D68351 /* FirebaseAuth */,
+				A0D53C252721AEBC00D68351 /* FirebaseDatabase */,
+				A0D53C272721AEBC00D68351 /* FirebaseFirestoreSwift-Beta */,
+			);
 			productName = Investor;
 			productReference = A0D53C002721A5C300D68351 /* Investor.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +286,11 @@
 				Base,
 			);
 			mainGroup = A0D53BF72721A5C300D68351;
+			packageReferences = (
+				A0D53C172721A8F400D68351 /* XCRemoteSwiftPackageReference "BaseComponents" */,
+				A0D53C1A2721A90200D68351 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
+				A0D53C222721AEBC00D68351 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A0D53C012721A5C300D68351 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +305,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D53C632721B26B00D68351 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				A0D53C5F2721B26B00D68351 /* OFL.txt in Resources */,
+				A0D53C582721B26B00D68351 /* Montserrat-Thin.ttf in Resources */,
+				A0D53C552721B26B00D68351 /* Montserrat-Light.ttf in Resources */,
+				A0D53C5D2721B26B00D68351 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				A0D53C542721B26B00D68351 /* Montserrat-BoldItalic.ttf in Resources */,
+				A0D53C562721B26B00D68351 /* Montserrat-ThinItalic.ttf in Resources */,
+				A0D53C5E2721B26B00D68351 /* Montserrat-ExtraBold.ttf in Resources */,
+				A0D53C612721B26B00D68351 /* Montserrat-Regular.ttf in Resources */,
+				A0D53C522721B26B00D68351 /* Montserrat-LightItalic.ttf in Resources */,
+				A0D53C572721B26B00D68351 /* Montserrat-ExtraLight.ttf in Resources */,
+				A0D53C532721B26B00D68351 /* Montserrat-Medium.ttf in Resources */,
 				A0D53C102721A5C800D68351 /* LaunchScreen.storyboard in Resources */,
+				A0D53C1F2721AD5200D68351 /* GoogleService-Info.plist in Resources */,
+				A0D53C5B2721B26B00D68351 /* Montserrat-BlackItalic.ttf in Resources */,
+				A0D53C5C2721B26B00D68351 /* Montserrat-SemiBold.ttf in Resources */,
+				A0D53C622721B26B00D68351 /* Montserrat-Italic.ttf in Resources */,
+				A0D53C592721B26B00D68351 /* Montserrat-Bold.ttf in Resources */,
+				A0D53C5A2721B26B00D68351 /* Montserrat-MediumItalic.ttf in Resources */,
 				A0D53C0D2721A5C800D68351 /* Assets.xcassets in Resources */,
-				A0D53C0B2721A5C300D68351 /* Main.storyboard in Resources */,
+				A0D53C602721B26B00D68351 /* Montserrat-Black.ttf in Resources */,
+				A0D53C642721B26B00D68351 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +337,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D53C3C2721B1E700D68351 /* FontManager.swift in Sources */,
+				A0D53C382721B18400D68351 /* SplashViewBuilder.swift in Sources */,
 				A0D53C082721A5C300D68351 /* ViewController.swift in Sources */,
+				A0D53C302721AFE300D68351 /* SimpleAuthRequest.swift in Sources */,
 				A0D53C042721A5C300D68351 /* AppDelegate.swift in Sources */,
 				A0D53C062721A5C300D68351 /* SceneDelegate.swift in Sources */,
+				A0D53C2C2721AF8E00D68351 /* AuthManagerProtocol.swift in Sources */,
+				A0D53C342721B16300D68351 /* SplashViewController.swift in Sources */,
+				A0D53C2E2721AFAF00D68351 /* AuthManager.swift in Sources */,
+				A0D53C362721B17D00D68351 /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0D53C092721A5C300D68351 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0D53C0A2721A5C300D68351 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0D53C0E2721A5C800D68351 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,10 +488,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Investor/Info.plist;
+				INFOPLIST_FILE = Investor/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +514,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Investor/Info.plist;
+				INFOPLIST_FILE = Investor/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +554,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0D53C172721A8F400D68351 /* XCRemoteSwiftPackageReference "BaseComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/darkbringer1/BaseComponents.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A0D53C1A2721A90200D68351 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emircanaydin/DefaultNetworkOperationPackage.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A0D53C222721AEBC00D68351 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0D53C182721A8F400D68351 /* BaseComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D53C172721A8F400D68351 /* XCRemoteSwiftPackageReference "BaseComponents" */;
+			productName = BaseComponents;
+		};
+		A0D53C1B2721A90200D68351 /* DefaultNetworkOperationPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D53C1A2721A90200D68351 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
+			productName = DefaultNetworkOperationPackage;
+		};
+		A0D53C232721AEBC00D68351 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D53C222721AEBC00D68351 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A0D53C252721AEBC00D68351 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D53C222721AEBC00D68351 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		A0D53C272721AEBC00D68351 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D53C222721AEBC00D68351 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0D53BF82721A5C300D68351 /* Project object */;
 }
