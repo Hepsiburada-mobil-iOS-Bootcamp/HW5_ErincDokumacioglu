@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A0D53C042721A5C300D68351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C032721A5C300D68351 /* AppDelegate.swift */; };
 		A0D53C062721A5C300D68351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C052721A5C300D68351 /* SceneDelegate.swift */; };
-		A0D53C082721A5C300D68351 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C072721A5C300D68351 /* ViewController.swift */; };
 		A0D53C0D2721A5C800D68351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C0C2721A5C800D68351 /* Assets.xcassets */; };
 		A0D53C102721A5C800D68351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C0E2721A5C800D68351 /* LaunchScreen.storyboard */; };
 		A0D53C192721A8F400D68351 /* BaseComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A0D53C182721A8F400D68351 /* BaseComponents */; };
@@ -44,13 +43,18 @@
 		A0D53C622721B26B00D68351 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C4F2721B26B00D68351 /* Montserrat-Italic.ttf */; };
 		A0D53C632721B26B00D68351 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C502721B26B00D68351 /* Montserrat-SemiBoldItalic.ttf */; };
 		A0D53C642721B26B00D68351 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C512721B26B00D68351 /* Montserrat-ExtraBoldItalic.ttf */; };
+		A0D53C662722B75F00D68351 /* CoinbaseLatestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C652722B75F00D68351 /* CoinbaseLatestData.swift */; };
+		A0D53C6B2722B95400D68351 /* CoinCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C6A2722B95400D68351 /* CoinCellView.swift */; };
+		A0D53C6D2722B96900D68351 /* CoinCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C6C2722B96900D68351 /* CoinCellViewData.swift */; };
+		A0D53C732722D46200D68351 /* SplashViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C702722D46200D68351 /* SplashViewBuilder.swift */; };
+		A0D53C742722D46200D68351 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C712722D46200D68351 /* SplashViewModel.swift */; };
+		A0D53C752722D46200D68351 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C722722D46200D68351 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A0D53C002721A5C300D68351 /* Investor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Investor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D53C032721A5C300D68351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D53C052721A5C300D68351 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0D53C072721A5C300D68351 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A0D53C0C2721A5C800D68351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0D53C0F2721A5C800D68351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0D53C112721A5C800D68351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +85,12 @@
 		A0D53C4F2721B26B00D68351 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		A0D53C502721B26B00D68351 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		A0D53C512721B26B00D68351 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D53C652722B75F00D68351 /* CoinbaseLatestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseLatestData.swift; sourceTree = "<group>"; };
+		A0D53C6A2722B95400D68351 /* CoinCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCellView.swift; sourceTree = "<group>"; };
+		A0D53C6C2722B96900D68351 /* CoinCellViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCellViewData.swift; sourceTree = "<group>"; };
+		A0D53C702722D46200D68351 /* SplashViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewBuilder.swift; sourceTree = "<group>"; };
+		A0D53C712722D46200D68351 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		A0D53C722722D46200D68351 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,14 +128,14 @@
 		A0D53C022721A5C300D68351 /* Investor */ = {
 			isa = PBXGroup;
 			children = (
+				A0D53C6E2722D28C00D68351 /* Views */,
+				A0D53C682722B93000D68351 /* Components */,
+				A0D53C672722B76D00D68351 /* Network */,
 				A0D53C392721B1D300D68351 /* Utilities */,
 				A0D53C312721B14100D68351 /* SceneModules */,
 				A0D53C292721AF5D00D68351 /* Managers */,
 				A0D53C212721AD6B00D68351 /* AppDelegate */,
 				A0D53C202721AD5400D68351 /* Resources */,
-				A0D53C1D2721A92400D68351 /* Models */,
-				A0D53C072721A5C300D68351 /* ViewController.swift */,
-				A0D53C0E2721A5C800D68351 /* LaunchScreen.storyboard */,
 			);
 			path = Investor;
 			sourceTree = "<group>";
@@ -133,6 +143,7 @@
 		A0D53C1D2721A92400D68351 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A0D53C652722B75F00D68351 /* CoinbaseLatestData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +154,7 @@
 				A0D53C1E2721AD5200D68351 /* GoogleService-Info.plist */,
 				A0D53C112721A5C800D68351 /* Info.plist */,
 				A0D53C0C2721A5C800D68351 /* Assets.xcassets */,
+				A0D53C0E2721A5C800D68351 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -233,6 +245,49 @@
 				A0D53C512721B26B00D68351 /* Montserrat-ExtraBoldItalic.ttf */,
 			);
 			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		A0D53C672722B76D00D68351 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C1D2721A92400D68351 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0D53C682722B93000D68351 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C692722B93400D68351 /* CoinCellView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A0D53C692722B93400D68351 /* CoinCellView */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C6A2722B95400D68351 /* CoinCellView.swift */,
+				A0D53C6C2722B96900D68351 /* CoinCellViewData.swift */,
+			);
+			path = CoinCellView;
+			sourceTree = "<group>";
+		};
+		A0D53C6E2722D28C00D68351 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C6F2722D2F500D68351 /* SplashScreen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0D53C6F2722D2F500D68351 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A0D53C702722D46200D68351 /* SplashViewBuilder.swift */,
+				A0D53C722722D46200D68351 /* SplashViewController.swift */,
+				A0D53C712722D46200D68351 /* SplashViewModel.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,13 +394,18 @@
 			files = (
 				A0D53C3C2721B1E700D68351 /* FontManager.swift in Sources */,
 				A0D53C382721B18400D68351 /* SplashViewBuilder.swift in Sources */,
-				A0D53C082721A5C300D68351 /* ViewController.swift in Sources */,
+				A0D53C6D2722B96900D68351 /* CoinCellViewData.swift in Sources */,
+				A0D53C742722D46200D68351 /* SplashViewModel.swift in Sources */,
 				A0D53C302721AFE300D68351 /* SimpleAuthRequest.swift in Sources */,
 				A0D53C042721A5C300D68351 /* AppDelegate.swift in Sources */,
+				A0D53C6B2722B95400D68351 /* CoinCellView.swift in Sources */,
 				A0D53C062721A5C300D68351 /* SceneDelegate.swift in Sources */,
 				A0D53C2C2721AF8E00D68351 /* AuthManagerProtocol.swift in Sources */,
+				A0D53C752722D46200D68351 /* SplashViewController.swift in Sources */,
 				A0D53C342721B16300D68351 /* SplashViewController.swift in Sources */,
 				A0D53C2E2721AFAF00D68351 /* AuthManager.swift in Sources */,
+				A0D53C732722D46200D68351 /* SplashViewBuilder.swift in Sources */,
+				A0D53C662722B75F00D68351 /* CoinbaseLatestData.swift in Sources */,
 				A0D53C362721B17D00D68351 /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
