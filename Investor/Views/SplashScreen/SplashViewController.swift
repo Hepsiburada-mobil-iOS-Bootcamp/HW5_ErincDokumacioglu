@@ -1,8 +1,8 @@
 //
 //  SplashViewController.swift
-//  Investor
+//  WeatherApplication
 //
-//  Created by Erinç Olkan Dokumacıoğlu on 21.10.2021.
+//  Created by Erkut Bas on 16.10.2021.
 //
 
 import Foundation
@@ -11,16 +11,16 @@ import BaseComponents
 
 class SplashViewController: BaseViewController<SplashViewModel> {
     
-    private lazy var backgroundImage: UIImageView = {
+    private lazy var image: UIImageView = {
         let temp = UIImageView()
         temp.translatesAutoresizingMaskIntoConstraints = false
         
         temp.isUserInteractionEnabled = false
-        temp.image = ImagesManager.splashImage.value
+        temp.image = ImageManager.splashImage.value
         temp.contentMode = .scaleAspectFill
+        
         return temp
     }()
-    
     
     override func prepareViewControllerConfigurations() {
         super.prepareViewControllerConfigurations()
@@ -29,18 +29,13 @@ class SplashViewController: BaseViewController<SplashViewModel> {
     }
     
     private func appendComponents() {
+        view.backgroundColor = .white
         view.addSubview(image)
-        view.addSubview(titleInfo)
         
         NSLayoutConstraint.activate([
         
-            image.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            image.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            image.topAnchor.constraint(equalTo: view.topAnchor),
-            image.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
-            titleInfo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            titleInfo.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100)
+            image.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            image.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             
             
         ])
