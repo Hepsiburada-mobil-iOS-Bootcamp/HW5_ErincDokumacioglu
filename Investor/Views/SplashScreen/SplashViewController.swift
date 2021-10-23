@@ -7,24 +7,18 @@
 
 import Foundation
 import UIKit
+import BaseComponents
 
 class SplashViewController: BaseViewController<SplashViewModel> {
     
     private lazy var image: UIImageView = {
         let temp = UIImageView()
         temp.translatesAutoresizingMaskIntoConstraints = false
+        
         temp.isUserInteractionEnabled = false
-        temp.image = PageViewImages.defaultSplashBackground.value
+        temp.image = ImageManager.splashImage.value
         temp.contentMode = .scaleAspectFill
-        return temp
-    }()
-    
-    private lazy var titleInfo: UILabel = {
-        let temp = UILabel()
-        temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.text = "Weather Application"
-        temp.font = MainFont.medium(32).value
-        temp.textColor = .white
+        
         return temp
     }()
     
@@ -35,18 +29,13 @@ class SplashViewController: BaseViewController<SplashViewModel> {
     }
     
     private func appendComponents() {
+        view.backgroundColor = .white
         view.addSubview(image)
-        view.addSubview(titleInfo)
         
         NSLayoutConstraint.activate([
         
-            image.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            image.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            image.topAnchor.constraint(equalTo: view.topAnchor),
-            image.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
-            titleInfo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            titleInfo.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100)
+            image.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            image.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             
             
         ])

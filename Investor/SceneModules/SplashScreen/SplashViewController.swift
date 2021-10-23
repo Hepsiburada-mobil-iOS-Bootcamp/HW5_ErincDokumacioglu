@@ -7,30 +7,20 @@
 
 import Foundation
 import UIKit
+import BaseComponents
 
 class SplashViewController: BaseViewController<SplashViewModel> {
     
     private lazy var backgroundImage: UIImageView = {
         let temp = UIImageView()
         temp.translatesAutoresizingMaskIntoConstraints = false
+        
         temp.isUserInteractionEnabled = false
-        temp.image = PageViewImages.defaultSplashBackground.value
+        temp.image = ImagesManager.splashImage.value
         temp.contentMode = .scaleAspectFill
         return temp
     }()
     
-    private lazy var titleInfo: UILabel = {
-        let temp = UILabel()
-        temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.text = "INVESTOR"
-        temp.font = MainFont.medium(32).value
-        temp.textColor = .white
-        return temp
-    }()
-    
-    private lazy var mainStackView: UIStackView = {
-        
-    }()
     
     override func prepareViewControllerConfigurations() {
         super.prepareViewControllerConfigurations()

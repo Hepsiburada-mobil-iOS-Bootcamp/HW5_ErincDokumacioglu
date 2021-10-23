@@ -7,7 +7,8 @@
 
 import Foundation
 
-class CoinCellViewData {
+class CoinCellViewData: GenericDataProtocol {
+    var type: GenericRowType?
     
     private(set) var coinNameData: String
     private(set) var changeData: String

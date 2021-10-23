@@ -8,7 +8,7 @@
 import UIKit
 import BaseComponents
 
-class CoinCellView: GenericBaseView<CoinCellViewData> {
+class CoinCellView: BaseTableViewCell {
     
     private lazy var containerView: UIView = {
         let temp = UIView()
@@ -104,21 +104,18 @@ class CoinCellView: GenericBaseView<CoinCellViewData> {
     }()
     
     
-    override func addMajorViewComponents() {
-        super.addMajorViewComponents()
+    override func addMajorView() {
+        super.addMajorView()
         
         addComponents()
     }
     
-    override func loadDataView() {
-        super.loadDataView()
-        
-        guard let data = returnData() else { return }
+    func setData(by value: GenericDataProtocol) {
+        guard let data = value as? CoinCellViewData else { return }
         coinNameLabel.text = data.coinNameData
         valueLabel.text = data.valueData
         changeLabel.text = data.changeData
         dateLabel.text = data.dateData
-    
     }
     
     // MARK: - Private functions
