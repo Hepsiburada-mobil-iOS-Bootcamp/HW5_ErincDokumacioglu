@@ -25,6 +25,7 @@ class LoginViewController:
         authenticationView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(authenticationView)
+        view.backgroundColor = .white
         
         NSLayoutConstraint.activate([
         

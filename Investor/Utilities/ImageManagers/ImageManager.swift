@@ -17,5 +17,5 @@ enum ImageManager: String, GenericValueProtocol {
     }
     
     case splashImage = "splashImage"
-
+    case login = "login"
 }
