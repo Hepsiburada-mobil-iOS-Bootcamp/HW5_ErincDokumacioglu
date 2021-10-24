@@ -22,4 +22,6 @@ protocol MainViewDataFormatterProtocol {
     func getCount() -> Int
     
     func getNumberOfItemsRetrieved() -> Int
+    
+    func getTotalCount() -> Int
 }

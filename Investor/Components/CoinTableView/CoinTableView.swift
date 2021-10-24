@@ -24,16 +24,19 @@ class CoinTableView: BaseView {
         temp.dataSource = self
         temp.estimatedRowHeight = UITableView.automaticDimension
         temp.separatorStyle = .none
-        temp.contentInsetAdjustmentBehavior = .never
+//        temp.contentInsetAdjustmentBehavior = .never
         temp.register(CoinCellView.self, forCellReuseIdentifier: CoinCellView.identifier)
         
         return temp
     }()
     
+    private var headerView: CoinTableHeaderView?
+    
     override func addMajorViewComponents() {
         super.addMajorViewComponents()
         
         addTableView()
+        initiateHeaderView()
     }
     
     private func addTableView() {
@@ -56,6 +59,16 @@ class CoinTableView: BaseView {
     func isLoadingCell(for indexPath: IndexPath) -> Bool {
         return delegate?.isLoadingCell(for: indexPath.row) ?? false
     }
+    
+    private func addHeaderView() {
+        tableView.tableHeaderView = headerView
+    }
+    
+    private func initiateHeaderView() {
+        headerView = CoinTableHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 80))
+        addHeaderView()
+    }
+
 }
 
 
@@ -69,13 +82,17 @@ extension CoinTableView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let data = delegate?.askData(at: indexPath.row) else { fatalError("Please provide data") }
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CoinCellView.identifier, for: indexPath) as? CoinCellView else { return UITableViewCell() }
-        
-        cell.setData(by: data)
-        
-        return cell
+        if isLoadingCell(for: indexPath) {
+            return UITableViewCell()
+        } else {
+            guard let data = delegate?.askData(at: indexPath.row) else { fatalError("Please provide data") }
+            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: CoinCellView.identifier, for: indexPath) as? CoinCellView else { return UITableViewCell() }
+            
+            cell.setData(by: data)
+            
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

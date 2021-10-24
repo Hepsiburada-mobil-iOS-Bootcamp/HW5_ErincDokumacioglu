@@ -18,7 +18,7 @@ class LoginViewModel {
     }
     
     func getLoginViewData() -> LoginAuthenticationViewData {
-        return LoginAuthenticationViewData(actionButtonData: ActionButtonData(text: "Login", buttonType: .filled(.sugarLevelColor)).setActionButtonListener(by: loginActionButtonListener),signOutButton: ActionButtonData(text: "Sign out", buttonType: .filled(.bright)).setActionButtonListener(by: signOutActionButtonListener), emailLoginViewData: EmailLoginViewData(email: TextFieldViewData(placeHolder: "Email"), password: TextFieldViewData(placeHolder: "Password")))
+        return LoginAuthenticationViewData(actionButtonData: ActionButtonData(text: "Login", buttonType: .filled(.bright)).setActionButtonListener(by: loginActionButtonListener),signOutButton: ActionButtonData(text: "Sign out", buttonType: .filled(.bright)).setActionButtonListener(by: signOutActionButtonListener), emailLoginViewData: EmailLoginViewData(email: TextFieldViewData(placeHolder: "Email"), password: TextFieldViewData(placeHolder: "Password")))
     }
     
     func listenLoginAction(with completion: @escaping BooleanBlock) {
@@ -27,7 +27,7 @@ class LoginViewModel {
     
     // MARK: - Private Methods
     private func fireSignIn() {
-        authenticationManager.signIn(with: SimpleAuthRequest(email: "takasi@gmail.com", password: "123456"))
+        authenticationManager.signIn(with: SimpleAuthRequest(email: "takashicoo@gmail.com", password: "123456"))
         loginViewBlock?(true)
     }
     

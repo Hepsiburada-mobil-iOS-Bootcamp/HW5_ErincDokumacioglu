@@ -21,7 +21,6 @@ struct Datum: Codable {
     let maxSupply: Int?
     let lastUpdated, dateAdded: String?
     let tags: [String]?
-    let platform: JSONNull?
     let quote: [String: Quote]?
 
     enum CodingKeys: String, CodingKey {
@@ -31,9 +30,9 @@ struct Datum: Codable {
         case circulatingSupply
         case totalSupply
         case maxSupply
-        case lastUpdated
+        case lastUpdated = "last_updated"
         case dateAdded
-        case tags, platform, quote
+        case tags, quote
     }
 }
 
@@ -51,13 +50,13 @@ struct Quote: Codable {
         case price
         case volume24H
         case volumeChange24H
-        case percentChange1H
+        case percentChange1H = "percent_change_1h"
         case percentChange24H
         case percentChange7D
         case marketCap
         case marketCapDominance
         case fullyDilutedMarketCap
-        case lastUpdated
+        case lastUpdated = "last_updated"
     }
 }
 
@@ -67,40 +66,15 @@ struct Status: Codable {
     let errorCode: Int?
     let errorMessage: String?
     let elapsed, creditCount: Int?
-
+    let totalCount: Int?
+    
     enum CodingKeys: String, CodingKey {
         case timestamp
         case errorCode
         case errorMessage
         case elapsed
         case creditCount
-    }
-}
-
-// MARK: - Encode/decode helpers
-
-class JSONNull: Codable, Hashable {
-
-    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
-        return true
-    }
-
-    public var hashValue: Int {
-        return 0
-    }
-
-    public init() {}
-
-    public required init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        if !container.decodeNil() {
-            throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
-        }
-    }
-
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        try container.encodeNil()
+        case totalCount = "total_count"
     }
 }
 

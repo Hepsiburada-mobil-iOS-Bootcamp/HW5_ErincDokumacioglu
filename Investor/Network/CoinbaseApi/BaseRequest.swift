@@ -20,7 +20,9 @@ struct BaseRequest: Codable {
         self.limit = limit
     }
     
-    enum EncodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case apiKey = "CMC_PRO_API_KEY"
+        case offset = "start"
+        case limit = "limit"
     }
 }

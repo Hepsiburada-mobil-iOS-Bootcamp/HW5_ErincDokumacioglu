@@ -18,7 +18,7 @@ enum EndpointHelper {
         var description: String {
             switch self {
             case .dev:
-                return "https://gateway.marvel.com:443/v1/public/"
+                return "https://pro-api.coinmarketcap.com/v1/"
             }
         }
     }

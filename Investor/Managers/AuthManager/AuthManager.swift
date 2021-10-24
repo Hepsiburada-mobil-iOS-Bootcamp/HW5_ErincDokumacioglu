@@ -31,9 +31,9 @@ class AuthenticationManager: AuthenticationManagerProtocol {
     func signIn(with request: SimpleAuthRequest) {
         Auth.auth().signIn(withEmail: request.email, password: request.password) { authDataResult, error in
             if error != nil {
-                print("Error : \(error)")
+                print("Error : \(String(describing: error))")
             }
-            print("data : \(authDataResult)")
+            print("data : \(String(describing: authDataResult))")
             print("break")
         }
         

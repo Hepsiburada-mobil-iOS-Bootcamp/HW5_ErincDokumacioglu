@@ -23,6 +23,7 @@ class MainViewModel {
          authManager: AuthenticationManagerProtocol) {
         self.formatter = formatter
         self.authManager = authManager
+        listenUserState()
     }
     
     func subscribeViewState(with completion: @escaping (MainViewState) -> Void) {
@@ -89,17 +90,17 @@ class MainViewModel {
 
 extension MainViewModel: CoinTableViewProtocol {
     func isLoadingCell(for index: Int) -> Bool {
-        return false
+        return index >= formatter.getCount()
     }
     
     func getMoreData() {
-        guard formatter.paginationData.checkLoadingMore(with: formatter.getNumberOfItemsRetrieved()) else { return }
+        guard formatter.paginationData.checkLoadingMore(with: formatter.getTotalCount()) else { return }
         formatter.paginationData.nextOffset()
         getData()
     }
     
     func askNumberOfSection() -> Int {
-        return 1
+        return formatter.getNumberOfSection()
     }
     
     func askNumberOfItem(in section: Int) -> Int {
