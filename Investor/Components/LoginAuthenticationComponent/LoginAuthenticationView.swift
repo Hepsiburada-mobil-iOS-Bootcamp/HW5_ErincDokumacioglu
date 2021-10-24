@@ -68,6 +68,7 @@ class LoginAuthenticationView: GenericBaseView<LoginAuthenticationViewData> {
         addSubview(containerView)
         containerView.addSubview(mainStackView)
         
+        
         NSLayoutConstraint.activate([
         
             containerView.leadingAnchor.constraint(equalTo: leadingAnchor),

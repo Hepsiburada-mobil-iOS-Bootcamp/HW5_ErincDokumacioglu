@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A0B1E97C2725C3BE0067019C /* CoinTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B1E97B2725C3BE0067019C /* CoinTableHeaderView.swift */; };
+		A0B1E9812725EE660067019C /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B1E9802725EE660067019C /* PlaceholderView.swift */; };
 		A0D53C042721A5C300D68351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53C032721A5C300D68351 /* AppDelegate.swift */; };
 		A0D53C0D2721A5C800D68351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C0C2721A5C800D68351 /* Assets.xcassets */; };
 		A0D53C102721A5C800D68351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D53C0E2721A5C800D68351 /* LaunchScreen.storyboard */; };
@@ -101,6 +102,7 @@
 
 /* Begin PBXFileReference section */
 		A0B1E97B2725C3BE0067019C /* CoinTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableHeaderView.swift; sourceTree = "<group>"; };
+		A0B1E9802725EE660067019C /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		A0D53C002721A5C300D68351 /* Investor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Investor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D53C032721A5C300D68351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D53C0C2721A5C800D68351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,6 +213,14 @@
 				A0B1E97B2725C3BE0067019C /* CoinTableHeaderView.swift */,
 			);
 			path = CoinTableHeaderView;
+			sourceTree = "<group>";
+		};
+		A0B1E97F2725EE540067019C /* PlaceholderView */ = {
+			isa = PBXGroup;
+			children = (
+				A0B1E9802725EE660067019C /* PlaceholderView.swift */,
+			);
+			path = PlaceholderView;
 			sourceTree = "<group>";
 		};
 		A0D53BF72721A5C300D68351 = {
@@ -346,6 +356,7 @@
 		A0D53C682722B93000D68351 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A0B1E97F2725EE540067019C /* PlaceholderView */,
 				A0D53CF3272499B300D68351 /* HeaderViewComponent */,
 				A0D53CE0272482CB00D68351 /* LoginAuthenticationComponent */,
 				A0D53CDB272482C400D68351 /* TextFieldComponent */,
@@ -707,6 +718,7 @@
 				A0D53CCB272482A300D68351 /* LabelPackComponentData.swift in Sources */,
 				A0D53CA727247FD700D68351 /* MainViewBuilder.swift in Sources */,
 				A0D53CF7272499B300D68351 /* HeaderViewData.swift in Sources */,
+				A0B1E9812725EE660067019C /* PlaceholderView.swift in Sources */,
 				A0D53CCA272482A300D68351 /* LabelDistributionData.swift in Sources */,
 				A0D53C8F27230CB500D68351 /* MainViewDataFormatterProtocol.swift in Sources */,
 				A0D53CB82724825300D68351 /* MainTabBarBuilder.swift in Sources */,

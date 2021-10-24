@@ -114,7 +114,7 @@ class CoinCellView: BaseTableViewCell {
         guard let data = value as? CoinCellViewData else { return }
         coinNameLabel.text = data.coinNameData
         valueLabel.text = data.valueData
-        changeLabel.text = String(data.changeData)
+        changeLabel.text = "%\(data.changeData)"
         dateLabel.text = data.dateData
     }
     

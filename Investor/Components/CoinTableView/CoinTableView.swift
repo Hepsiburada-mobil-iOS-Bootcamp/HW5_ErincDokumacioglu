@@ -31,12 +31,18 @@ class CoinTableView: BaseView {
     }()
     
     private var headerView: CoinTableHeaderView?
+    private var emptyView: PlaceholderView!
     
     override func addMajorViewComponents() {
         super.addMajorViewComponents()
         
         addTableView()
         initiateHeaderView()
+    }
+    
+    override func setupViewConfigurations() {
+        super.setupViewConfigurations()
+        setupBackgroundView()
     }
     
     private func addTableView() {
@@ -52,6 +58,7 @@ class CoinTableView: BaseView {
     
     func reloadTableView() {
         DispatchQueue.main.async {
+            self.emptyViewActivationControl()
             self.tableView.reloadData()
         }
     }
@@ -67,6 +74,16 @@ class CoinTableView: BaseView {
     private func initiateHeaderView() {
         headerView = CoinTableHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 80))
         addHeaderView()
+    }
+    
+    private func setupBackgroundView() {
+        emptyView =  PlaceholderView(frame: .zero)
+        tableView.backgroundView = emptyView
+    }
+    
+    private func emptyViewActivationControl() {
+        let condition = (delegate?.askNumberOfItem(in: 1) ?? 0) <= 0
+        emptyView.activationManager(by: condition)
     }
 
 }
