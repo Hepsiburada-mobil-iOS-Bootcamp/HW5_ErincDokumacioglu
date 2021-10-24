@@ -49,8 +49,8 @@ class AccountViewDataFormatter: AccountViewDataProtocol {
     func getHeaderViewData(with completion: @escaping VoidCompletionBlock) -> HeaderViewData {
         
         return HeaderViewData(
-            labelPackData: LabelPackComponentData(title: "Your Profile", subTitle: "Login to start to search weather data."),
-            actionButtonData: ActionButtonData(text: "Login", buttonType: .filled(.sugarLevelColor))
+            labelPackData: LabelPackComponentData(title: "Your Profile", subTitle: "Login to start to fetch latest cryptocurrency data."),
+            actionButtonData: ActionButtonData(text: "Login", buttonType: .filled(.bright))
                 .setActionButtonListener(by: completion))
     }
     

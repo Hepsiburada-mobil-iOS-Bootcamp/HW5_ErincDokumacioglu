@@ -24,8 +24,8 @@ class CoinCellView: BaseTableViewCell {
         let temp = UIStackView(arrangedSubviews: [coinDataStackView, dateLabel])
         temp.translatesAutoresizingMaskIntoConstraints = false
         
-        temp.alignment = .center
-        temp.distribution = .fill
+        temp.alignment = .fill
+        temp.distribution = .fillEqually
         temp.axis = .vertical
         temp.spacing = 10
         
@@ -62,7 +62,7 @@ class CoinCellView: BaseTableViewCell {
         let temp = UILabel()
         temp.translatesAutoresizingMaskIntoConstraints = false
         
-        temp.textColor = .green
+        temp.textColor = .darkGray
         temp.text = " "
         temp.lineBreakMode = .byWordWrapping
         temp.numberOfLines = 0
@@ -114,7 +114,7 @@ class CoinCellView: BaseTableViewCell {
         guard let data = value as? CoinCellViewData else { return }
         coinNameLabel.text = data.coinNameData
         valueLabel.text = data.valueData
-        changeLabel.text = data.changeData
+        changeLabel.text = String(data.changeData)
         dateLabel.text = data.dateData
     }
     
@@ -135,4 +135,5 @@ class CoinCellView: BaseTableViewCell {
             mainStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
         ])
     }
+
 }

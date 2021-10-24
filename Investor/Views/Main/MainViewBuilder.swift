@@ -16,7 +16,7 @@ class MainViewBuilder {
         let viewController = MainViewController(viewModel: viewModel)
         
         let navigationViewController = UINavigationController(rootViewController: viewController)
-        viewController.title = "Main"
+        viewController.title = "Coin Data"
         viewController.tabBarItem.image = TabBarImageManager.home.value
         viewController.tabBarItem.selectedImage = TabBarImageManager.homeSelected.value
         viewController.navigationController?.setNavigationBarHidden(true, animated: false)

@@ -12,8 +12,8 @@ struct PaginationInfo {
     var offset: Int = 1
     var fetching: Bool = false
     
-    func checkLoadingMore(with currentDataSize: Int) -> Bool {
-        return (limit <= currentDataSize) && !fetching
+    func checkLoadingMore(with totalCount: Int) -> Bool {
+        return (limit + offset <= totalCount) && !fetching
     }
     
     mutating func nextOffset() {
